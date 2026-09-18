@@ -1,0 +1,11 @@
+# Trajectories, checkpoints, and energy files are not hosted on GitHub
+*.xtc
+*.trr
+*.cpt
+*.edr
+# GROMACS backups
+#*#
+*~
+# OS / editor
+.DS_Store
+Thumbs.db
