@@ -1,0 +1,38 @@
+tolerance 2.5
+filetype pdb
+output INH3_packed.pdb
+
+structure /home/hlgaz26/md_inhibitor_film/01_parameterize/INH3_clean.pdb
+  number 30
+  inside box 1.0 1.0 42.5  59.0 59.0 67.5
+end structure
+
+structure water.pdb
+  number 4926
+  inside box 1.0 1.0 1.0  59.0 59.0 41.5
+end structure
+
+structure water.pdb
+  number 4926
+  inside box 1.0 1.0 68.5  59.0 59.0 109.0
+end structure
+
+structure hydronium.pdb
+  number 92
+  inside box 1.0 1.0 1.0  59.0 59.0 41.5
+end structure
+
+structure hydronium.pdb
+  number 92
+  inside box 1.0 1.0 68.5  59.0 59.0 109.0
+end structure
+
+structure chloride.pdb
+  number 92
+  inside box 1.0 1.0 1.0  59.0 59.0 41.5
+end structure
+
+structure chloride.pdb
+  number 92
+  inside box 1.0 1.0 68.5  59.0 59.0 109.0
+end structure

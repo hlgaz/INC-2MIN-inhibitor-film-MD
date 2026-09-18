@@ -1,0 +1,20 @@
+source leaprc.gaff2
+source leaprc.water.tip3p
+
+loadamberparams frcmod.ionsjc_tip3p
+
+loadoff IN3.lib
+loadoff H3O.lib
+
+loadamberparams /home/hlgaz26/md_inhibitor_film/01_parameterize/INH3.frcmod
+loadamberparams hydronium.frcmod
+
+sys = loadpdb INH3_packed.pdb
+
+set sys box { 60.0 60.0 110.0 }
+
+check sys
+
+saveamberparm sys INH3_system.prmtop INH3_system.inpcrd
+
+quit

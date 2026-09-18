@@ -1,0 +1,13 @@
+source leaprc.gaff2
+source leaprc.water.tip3p
+
+IN4 = loadmol2 /home/hlgaz26/md_inhibitor_film/01_parameterize/INH4.mol2
+loadamberparams /home/hlgaz26/md_inhibitor_film/01_parameterize/INH4.frcmod
+
+H3O = loadmol2 hydronium.mol2
+loadamberparams hydronium.frcmod
+
+saveoff IN4 IN4.lib
+saveoff H3O H3O.lib
+
+quit

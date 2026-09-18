@@ -1,0 +1,104 @@
+-I: Adding /home/hlgaz26/miniconda3/dat/leap/prep to search path.
+-I: Adding /home/hlgaz26/miniconda3/dat/leap/lib to search path.
+-I: Adding /home/hlgaz26/miniconda3/dat/leap/parm to search path.
+-I: Adding /home/hlgaz26/miniconda3/dat/leap/cmd to search path.
+-f: Source tleap_system_INH3.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./tleap_system_INH3.in
+----- Source: /home/hlgaz26/miniconda3/dat/leap/cmd/leaprc.gaff2
+----- Source of /home/hlgaz26/miniconda3/dat/leap/cmd/leaprc.gaff2 done
+Log file: ./leap.log
+Loading parameters: /home/hlgaz26/miniconda3/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+----- Source: /home/hlgaz26/miniconda3/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /home/hlgaz26/miniconda3/dat/leap/cmd/leaprc.water.tip3p done
+Loading library: /home/hlgaz26/miniconda3/dat/leap/lib/atomic_ions.lib
+Loading library: /home/hlgaz26/miniconda3/dat/leap/lib/solvents.lib
+Loading parameters: /home/hlgaz26/miniconda3/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+Loading parameters: /home/hlgaz26/miniconda3/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+Loading parameters: /home/hlgaz26/miniconda3/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+Loading parameters: /home/hlgaz26/miniconda3/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+Loading parameters: /home/hlgaz26/miniconda3/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+Loading library: ./IN3.lib
+Loading library: ./H3O.lib
+Loading parameters: /home/hlgaz26/md_inhibitor_film/01_parameterize/INH3.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading parameters: ./hydronium.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Hydronium H3O+ parameters (modified TIP3P-based, Baaden et al.)
+Loading PDB file: ./INH3_packed.pdb
+ (starting new molecule for chain B)
+ (starting new molecule for chain C)
+ (starting new molecule for chain D)
+ (starting new molecule for chain E)
+ (starting new molecule for chain F)
+ (starting new molecule for chain G)
+  total atoms in file: 31016
+Checking 'sys'....
+
+/home/hlgaz26/miniconda3/bin/teLeap: Warning!
+The unperturbed charge of the unit (0.030000) is not integral.
+
+/home/hlgaz26/miniconda3/bin/teLeap: Warning!
+The unperturbed charge of the unit (0.030000) is not zero.
+Checking parameters for unit 'sys'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 2
+Unit is OK.
+Checking Unit.
+
+/home/hlgaz26/miniconda3/bin/teLeap: Warning!
+The unperturbed charge of the unit (0.030000) is not integral.
+
+/home/hlgaz26/miniconda3/bin/teLeap: Warning!
+The unperturbed charge of the unit (0.030000) is not zero.
+
+/home/hlgaz26/miniconda3/bin/teLeap: Note.
+Ignoring the warnings from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 300 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	H3O	184
+	IN3	30
+	WAT	9852
+  )
+ (no restraints)
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 4; Notes = 1.
